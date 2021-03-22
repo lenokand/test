@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beleduc</title>
+  <link rel="stylesheet" href="fonts/museocyrl.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="telegramform.js"></script> -->
+<link href="bundle.css" rel="stylesheet"></head>
+
+<body>
+
+  <div class="first-screen" style="background-image: url(fon1.png);">
+
+    <div class="container ">
+
+
+      <nav class="navbar " id="mainNav">
+
+        <!-- лого -->
+        <a class="text-decoration-none " href="#">
+          <div class="logo">
+            <div class="logo-img" style=" background-image: url(Logo.png); ">
+            </div>
+            <div class="logo-text">
+              <h4>Настенные игровые панели и модули</h4>
+            </div>
+          </div>
+        </a>
+
+
+
+
+        <!-- коллопсирующее меню -->
+        <menu class="p-0">
+          <!-- бургер кнопка -->
+          <a class="navbar-toggler" id="burger-menu" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="burger"> </span>
+          <span class="burger"> </span>
+          <span class="burger"> </span>
+
+        </a>
+          <nav class="navbar navbar-expand-lg   p-0 m-0">
+
+            <div class="container-fluid justify-content-between">
+              
+
+              <div class="collapse navbar-collapse " id="navbarNav">
+
+                <!-- контакты -->
+                <div class="info">
+
+                  <div class="contacts d-flex flex-column flex-lg-row justify-content-between justify-content-md-end ">
+                    <div class="telephone ">
+                      <a class="text-decoration-none " href="tel:+7(495) 222-60-49">
+                        <img src="call-answer.png" alt="call">+7(495) 222-60-49</a>
+
+                    </div>
+
+                    <div class="adress d-flex">
+                      <img src="maps-and-flags.png" alt="call">
+                      <div class="adress_info">
+
+                        <span class="color-highlight">г.Москва,</span> ул.Складочная,
+
+
+                        д.1стр5 оф.3160
+                      </div>
+                    </div>
+
+
+                    <!-- модальное окно -->
+                    <div class="modal-btn">
+                      <!-- Button trigger modal -->
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <span class="color-highlight">З</span>аказать звонок
+                      </a>
+
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content ">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="container d-flex">
+                              <div class="modal-header ">
+
+                                <h5 class="modal-title " id="exampleModalLabel">Заказать звонок</h5>
+
+                              </div>
+                              <!-- <form  method="POST" id="form-contact" " class="contact-form" autocomplete="off" enctype="multipart/form-data"> -->
+                              <form action="telegram.php" method="POST" id="form-contact" " class=" contact-form">
+                                <p class="contact-form__message"></p>
+                                <div class="modal-body">
+                                  <!-- форма -->
+
+                                  <div class="input-group mb-3">
+
+                                    <input type="text" class="form-control" name="name" minlength="1"
+                                      placeholder="Ваше имя" required aria-label="Username">
+                                  </div>
+                                  <div class="input-group mb-3">
+
+                                    <input type="tel" class="form-control" name="phone" minlength="10"
+                                      placeholder="Ваш номер телефона" required aria-label="TelephoneNumber">
+                                  </div>
+
+
+                                  <a href="#">Нажимая на кнопку, вы даете согласие на обработку своих персональных
+                                    данных</a>
+                                </div>
+                                <div class="modal-footer justify-content-center">
+
+                                  <button type="submit" class="btn btn-order">Заказать звонок</button>
+                                </div>
+                              </form>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- /контакты -->
+
+                  <!-- меню -->
+                  <ul class="navbar-nav align-items-baseline ">
+                    <li class="nav-item  text-start">
+                      <a class="nav-link active" aria-current="page" href="#">Главная</a>
+
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+
+                    <img src="zipSmall.png" alt="zip">
+
+                    <li class="nav-item text-start">
+                      <a class="nav-link" href="#">Каталог игровых панелей</a>
+
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+                    <img src="zipSmall.png" alt="zip">
+                    <li class="nav-item text-start">
+                      <a class="nav-link" href="#">Видеоролики</a>
+
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+
+                    <img src="zipSmall.png" alt="zip">
+
+                    <li class="nav-item text-start">
+                      <a class="nav-link" href="#">Для кого?</a>
+
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+                    <img src="zipSmall.png" alt="zip">
+
+                    <li class="nav-item text-start">
+                      <a class="nav-link" href="#">Сферы образования</a>
+
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+                    <img src="zipSmall.png" alt="zip">
+                    <li class="nav-item text-start">
+                      <a class="nav-link" href="#">Отзывы</a>
+
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+                    <img src="zipSmall.png" alt="zip">
+
+                  </ul>
+                  <!-- / меню -->
+                </div>
+
+
+
+              </div>
+              </div>
+            
+          </nav>
+
+        </menu>
+
+
+      </nav>
+      <div class="title-container col-11 col-m-8 col-lg-6">
+        <div class="title text-start ">
+          <h1><Span class="color-highlight">Н</Span>астенные и напольные
+            игровые элементы</h1>
+        </div>
+        <div class="title-info text-start">
+          <div class="info-left">
+            <span class="color-highlight">!</span>
+          </div>
+          <div class="info_right">
+            <h2><Span class="color-highlight">Успей купить до подорожания!</Span></h2>
+
+            <p class="col-lg-6 col-md-8 col-sm-10">Отправьте заявку прямо сейчас и получите <span class="UTP color-highlight">максимальную
+                <!-- подчеркивание -->
+                <span class="zip" style="background-image: url(zip.png);"></span>
+
+              </span> выгоду!</p>
+          </div>
+
+        </div>
+        <div class="align-self-center">
+          <button class="btn btn-order align-self-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Отправить заявку
+          </button>
+        </div>
+      </div>
+
+
+
+      <div class="advantage ">
+        <div class="advantage_contain ">
+          <img src="zipBlue.png" alt="zip">
+          <p class="advantage_text"><span class="text-large"> 65 лет</span>
+            на рынке</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- плавно передвигающиеся полоски -->
+    <span class="animation-line1"></span>
+    <span class="animation-line2"></span>
+
+    <!-- параллаксирующие эллементы -->
+    <div class="scene-container">
+      <div data-relative-input="true" id="scene">
+
+        <img data-depth="0.5" class="parallax-subtract" src="Subtract.png" alt="Subtract">
+
+      </div>
+
+      <div data-relative-input="true" id="scene2">
+        <img data-depth="0.8" class="parallax-tryangle" src="tryangle.png" alt="tryangle">
+      </div>
+      <div data-relative-input="true" id="scene3">
+        <img data-depth="0.4" src="SubtractWhite.svg" alt="SubtractWhite">
+      </div>
+      <div data-relative-input="true" id="scene4">
+        <img data-depth="0.1" src="tryangleYellow.svg" alt="tryangleYellow">
+      </div>
+      <div data-relative-input="true" id="scene5">
+        <img data-depth="0.2" src="Qvadrangle.svg" alt="Qvadrangle">
+      </div>
+      <div data-relative-input="true" id="scene6">
+        <img data-depth="0.2" src="QvadrangleYellow.png" alt="QvadrangleYellow">
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- второй экран -->
+  <div class="second-screen" style="background-image: url(fon2.png);">
+    <div class="screen-title d-flex align-items-center justify-content-center">
+      <h3>
+        Настенные игровые панели и модули
+      </h3>
+      <img src="SubtractYellow.png" alt="Subtract">
+    </div>
+
+
+    <div class="screen-body">
+      <div class="container">
+        <nav>
+          <!-- табы -->
+          <div class="menu-bar nav nav-tabs" id="nav-tab" role="tablist">
+
+            <div class="tab-item active" id="nav-bee-tab" data-bs-toggle="tab" data-bs-target="#nav-bee" role="tab"
+              aria-controls="nav-bee" aria-selected="true">
+              <img src="bee.png" alt="bee">
+              <p>Пчелы</p>
+            </div>
+            <div class="tab-item" id="nav-train-tab" data-bs-toggle="tab" data-bs-target="#nav-train" role="tab"
+              aria-controls="nav-train" aria-selected="false">
+              <img src="train.png" alt="train">
+              <p>Паровозик</p>
+            </div>
+            <div class="tab-item" id="nav-train-tab" data-bs-toggle="tab" data-bs-target="#nav-caterpillar" role="tab"
+              aria-controls="nav-caterpillar" aria-selected="false">
+              <img src="caterpillar.png" alt="caterpillar">
+              <p>Гусеница</p>
+            </div>
+            <div class="tab-item" id="nav-windmill-tab" data-bs-toggle="tab" data-bs-target="#nav-windmill" role="tab"
+              aria-controls="nav-windmill" aria-selected="false">
+              <img src="windmill.png" alt="windmill">
+              <p>Игровые</p>
+            </div>
+            <div class="tab-item" id="nav-3d-tab" data-bs-toggle="tab" data-bs-target="#nav-3d" type="button" role="tab"
+              aria-controls="nav-3d" aria-selected="false">
+              <img src="3d.png" alt="3d">
+              <p>Для ног</p>
+            </div>
+
+            <span class="container-seondline">
+              <div class="tab-item" id="nav-bulleye-tab" data-bs-toggle="tab" data-bs-target="#nav-bulleye"
+                type="button" role="tab" aria-controls="nav-bulleye" aria-selected="false">
+                <img src="bulleye.png" alt="buellye">
+                <p>Продвинутые</p>
+              </div>
+            </span>
+
+
+
+          </div>
+          <!-- контент табов -->
+
+          <div class="tab-content" id="nav-tabContent">
+            <div class="arrowLeft">
+              <img src="arrowLeft.png" alt="arrowLeft">
+            </div>
+            <div class="arrowRight">
+              <img src="arrowRight.png" alt="arrowRight">
+            </div>
+
+
+            <div class="tab-pane  fade show myTab active" id="nav-bee" role="tabpanel" aria-labelledby="nav-bee-tab">
+              <!-- карточка -->
+              <div class="card" style="width: 18rem;">
+                <img src="cardBee.png" class="card-img-top" alt="Bee">
+                <img src="search.png" class="alternative-img" alt="search">
+                <div class="card-body">
+                  <div class="card-title">„Пчёлка“</div>
+                  <div class="card-text">Собирайте пыльцу и
+                    заглядывайте в улей</div>
+                  <!-- ВЫзов модального больше информации -->
+                  <div><a class="text-decoration-none more-info" href="#" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">Больше информации ></a> </div>
+
+                  <div class="price">
+                    2500 <span>₽</span>
+                  </div>
+
+                  <div class="interactive ">
+                    <div class="iny-img intDrow"><img src="intDrow.png" alt="drow"></div>
+                    <div class="iny-img intDance"> <img src="intDance.png" alt="dance"></div>
+                    <div class="iny-img intTouch"> <img src="intTouch.png" alt="hand"></div>
+
+
+
+                  </div>
+
+
+                  <!-- Вызов модального купить -->
+                  <a href="#" class="btn btn-order btn-card" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">Купить</a>
+
+
+                </div>
+
+              </div>
+              <!-- /карточка -->
+
+              <!-- карточка -->
+              <div class="card" style="width: 18rem;">
+                <img src="cardBee.png" class="card-img-top" alt="Bee">
+                <img src="search.png" class="alternative-img" alt="search">
+                <div class="card-body">
+                  <div class="card-title">„Пчёлка“</div>
+                  <div class="card-text">Собирайте пыльцу и
+                    заглядывайте в улей</div>
+                  <!-- ВЫзов модального больше информации -->
+                  <div><a class="text-decoration-none more-info" href="#" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">Больше информации ></a> </div>
+
+                  <div class="price">
+                    2500 <span>₽</span>
+                  </div>
+
+                  <div class="interactive ">
+                    <div class="iny-img intDrow"><img src="intDrow.png" alt="drow"></div>
+                    <div class="iny-img intDance"> <img src="intDance.png" alt="dance"></div>
+                    <div class="iny-img intTouch"> <img src="intTouch.png" alt="hand"></div>
+
+
+
+                  </div>
+
+
+                  <!-- Вызов модального купить -->
+                  <a href="#" class="btn btn-order btn-card" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">Купить</a>
+
+
+                </div>
+
+              </div>
+              <!-- /карточка -->
+              <!-- карточка -->
+              <div class="card" style="width: 18rem;">
+                <img src="cardBee.png" class="card-img-top" alt="Bee">
+                <img src="search.png" class="alternative-img" alt="search">
+                <div class="card-body">
+                  <div class="card-title">„Пчёлка“</div>
+                  <div class="card-text">Собирайте пыльцу и
+                    заглядывайте в улей</div>
+                  <!-- ВЫзов модального больше информации -->
+                  <div><a class="text-decoration-none more-info" href="#" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">Больше информации ></a> </div>
+
+                  <div class="price">
+                    2500 <span>₽</span>
+                  </div>
+
+                  <div class="interactive ">
+                    <div class="iny-img intDrow"><img src="intDrow.png" alt="drow"></div>
+                    <div class="iny-img intDance"> <img src="intDance.png" alt="dance"></div>
+                    <div class="iny-img intTouch"> <img src="intTouch.png" alt="hand"></div>
+
+
+
+                  </div>
+
+
+                  <!-- Вызов модального купить -->
+                  <a href="#" class="btn btn-order btn-card" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">Купить</a>
+
+
+                </div>
+
+              </div>
+              <!-- /карточка -->
+              <!-- карточка -->
+              <div class="card" style="width: 18rem;">
+                <img src="cardBee.png" class="card-img-top" alt="Bee">
+                <img src="search.png" class="alternative-img" alt="search">
+                <div class="card-body">
+                  <div class="card-title">„Пчёлка“</div>
+                  <div class="card-text">Собирайте пыльцу и
+                    заглядывайте в улей</div>
+                  <!-- ВЫзов модального больше информации -->
+                  <div><a class="text-decoration-none more-info" href="#" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">Больше информации ></a> </div>
+
+                  <div class="price">
+                    2500 <span>₽</span>
+                  </div>
+
+                  <div class="interactive ">
+                    <div class="iny-img intDrow"><img src="intDrow.png" alt="drow"></div>
+                    <div class="iny-img intDance"> <img src="intDance.png" alt="dance"></div>
+                    <div class="iny-img intTouch"> <img src="intTouch.png" alt="hand"></div>
+
+
+
+                  </div>
+
+
+                  <!-- Вызов модального купить -->
+                  <a href="#" class="btn btn-order btn-card" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">Купить</a>
+
+
+                </div>
+
+              </div>
+              <!-- /карточка -->
+
+            </div>
+            <div class="tab-pane fade" id="nav-train" role="tabpanel" aria-labelledby="nav-train-tab">
+
+
+
+              <img src="train.png" alt="train">
+            </div>
+            <div class="tab-pane fade" id="nav-caterpillar" role="tabpanel" aria-labelledby="nav-caterpillar-tab">
+              <img src="caterpillar.png" alt="caterpillar">
+            </div>
+            <div class="tab-pane fade" id="nav-windmill" role="tabpanel" aria-labelledby="nav-windmill-tab">
+              <img src="windmill.png" alt="train">
+            </div>
+            <div class="tab-pane fade" id="nav-3d" role="tabpanel" aria-labelledby="nav-train-3d">
+              <img src="3d.png" alt="train">
+            </div>
+            <div class="tab-pane fade" id="nav-bulleye" role="tabpanel" aria-labelledby="nav-bulleye-tab">
+              <img src="bulleye.png" alt="train">
+            </div>
+
+
+            <!-- модальное -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content ">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="container d-flex">
+                    <div class="modal-header ">
+
+                      <h5 class="modal-title " id="exampleModalLabel2">Купить</h5>
+
+                    </div>
+
+                    <form action="telegram.php" method="POST" id="form-contact" " class=" contact-form">
+                      <p class="contact-form__message"></p>
+                      <div class="modal-body">
+                        <!-- форма -->
+
+                        <div class="input-group mb-3">
+
+                          <input type="text" class="form-control" name="name" minlength="1" placeholder="Ваше имя"
+                            required aria-label="Username">
+                        </div>
+                        <div class="input-group mb-3">
+
+                          <input type="tel" class="form-control" name="phone" minlength="10"
+                            placeholder="Ваш номер телефона" required aria-label="TelephoneNumber">
+                        </div>
+                        <div class="input-group mb-3">
+
+                          <input type="email" class="form-control" name="email" minlength="3" placeholder="Ваша почта"
+                            required aria-label="Emeil">
+                        </div>
+                        <div class="input-group mb-3">
+
+                          <input type="text" class="form-control" name="coment" placeholder="Комметарий"
+                            aria-label="Emeil">
+                        </div>
+
+
+                        <a href="#">Нажимая на кнопку, вы даете согласие на обработку своих персональных
+                          данных</a>
+                      </div>
+                      <div class="modal-footer">
+
+                        <button type="submit" class="btn btn-order">Купить</button>
+                      </div>
+                    </form>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- /модальное -->
+            <!-- Модальное больше инфо -->
+            <div class="modal modal-moreinfo fade" id="staticBackdrop" data-bs-backdrop="static"
+              data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header ">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="card-title " id="staticBackdropLabel"> <img src="cardBee.png" class="" alt="Bee"> </div>
+                  </div>
+                  <div class="modal-body">
+                    <h3>„Пчёлка“</h3>
+                    <div class="modal-text">Наши новые шесть напольных элементов позволят малышам в игровой форме узнать
+                      о жизни пчел. Каждый элемент предлагает свой вариант игры. Привлекательный дизайн развивает у
+                      ребенка интерес к игре.</div>
+                    <div class="size">Размер: 750 × 1180 мм</div>
+                    <div class="interactive ">
+                      <div class="iny-img intDrow"><img src="intDrow.png" alt="drow"></div>
+                      <div class="iny-img intDance"> <img src="intDance.png" alt="dance"></div>
+                      <div class="iny-img intTouch"> <img src="intTouch.png" alt="hand"></div>
+
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- Модальное больше инфо -->
+          </div>
+
+        </nav>
+
+
+        <!-- /container -->
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script defer src="main.bundle.1616443577346.js"></script></body>
+
+</html>
